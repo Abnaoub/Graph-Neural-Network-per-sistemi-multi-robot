@@ -1,0 +1,167 @@
+{
+  "args": {
+    "data": [
+      "data/generated/orca_warehouse_n6.npz",
+      "data/generated/orca_warehouse_n12.npz",
+      "data/generated/orca_warehouse_n18.npz"
+    ],
+    "method": "gnn",
+    "epochs": 30,
+    "batch_size": 128,
+    "hidden": 128,
+    "layers": 3,
+    "lr": 0.0003,
+    "output": "results/checkpoints_warehouse",
+    "seed": 0,
+    "collision_weight": 0.0,
+    "progress_weight": 0.0,
+    "smoothness_weight": 0.0
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.10194180388803974,
+      "validation_loss": 0.013431325272404994
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.009866488256381435,
+      "validation_loss": 0.007226512770143562
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.005947729758560661,
+      "validation_loss": 0.006653278210450506
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.005338359162220994,
+      "validation_loss": 0.005821299920093021
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0049853218663931465,
+      "validation_loss": 0.006402698909444781
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0048882023220686915,
+      "validation_loss": 0.0055107822322366965
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.0047630603190528305,
+      "validation_loss": 0.005494026059692779
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.004608613480232951,
+      "validation_loss": 0.005338662561043964
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.004556020343483035,
+      "validation_loss": 0.005150057737714619
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.004434332406134701,
+      "validation_loss": 0.005097330147280506
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.004349414432585372,
+      "validation_loss": 0.004993413413004401
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.004257662652827436,
+      "validation_loss": 0.005052147323322899
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.004197137032366831,
+      "validation_loss": 0.006365298158770688
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.004312917806633706,
+      "validation_loss": 0.004910554479792847
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.004084302731236484,
+      "validation_loss": 0.004800139409023807
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.004005823741165953,
+      "validation_loss": 0.004576216578276826
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.003924719073262749,
+      "validation_loss": 0.004538644136117017
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.003871425068118744,
+      "validation_loss": 0.004569501977421277
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.0037894021427768983,
+      "validation_loss": 0.00432414327756427
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.003755681826624612,
+      "validation_loss": 0.004492174847858217
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.0037008105990855643,
+      "validation_loss": 0.00461691577768376
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.0036545511292652216,
+      "validation_loss": 0.003987358360135018
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.003519900150760449,
+      "validation_loss": 0.0039091010234614965
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.003463825667101627,
+      "validation_loss": 0.003791733138167232
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.0033290738875792077,
+      "validation_loss": 0.0037657332277097125
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.0033395672109147387,
+      "validation_loss": 0.003582627043161242
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.0032103565473388775,
+      "validation_loss": 0.0035051995292084423
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.003279436096715387,
+      "validation_loss": 0.0035916827720607475
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.0030740687048133515,
+      "validation_loss": 0.0033595211519162854
+    }
+  ]
+}

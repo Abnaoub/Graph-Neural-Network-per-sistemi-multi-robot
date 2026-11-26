@@ -1,0 +1,115 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3dx.proto"
+
+# FILE GENERATO da scripts/genera_mondo_webots.py: per cambiare il magazzino
+# modifica core/warehouse.py e rigenera il mondo.
+WorldInfo {
+  info [ "Magazzino automatizzato: navigazione cooperativa con GNN" ]
+  title "Warehouse GNN"
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.4294 0.4178 0.8006 1.7934
+  position -0.96 -13.83 20.08
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 12 8
+  floorTileSize 12 8
+  floorAppearance PBRAppearance { baseColor 0.62 0.62 0.62 roughness 1 metalness 0 }
+  wallThickness 0.1
+  wallHeight 0.6
+  wallAppearance PBRAppearance { baseColor 0.97 0.97 0.97 roughness 1 metalness 0 }
+}
+DEF ZONE_LEFT Pose { translation -3 0 0.002 children [ Shape { appearance PBRAppearance { baseColor 0.75 0.75 0.75 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 1.4 } } ] }
+DEF ZONE_CENTER Pose { translation 0 0 0.002 children [ Shape { appearance PBRAppearance { baseColor 0.75 0.75 0.75 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 1.4 } } ] }
+DEF ZONE_RIGHT Pose { translation 3 0 0.002 children [ Shape { appearance PBRAppearance { baseColor 0.75 0.75 0.75 roughness 1 metalness 0 } geometry Cylinder { height 0.002 radius 1.4 } } ] }
+DEF PAD_YELLOW_1 Pose { translation -5.1 1 0.005 children [ Shape { appearance PBRAppearance { baseColor 1 1 0 roughness 1 metalness 0 } geometry Box { size 1 0.7 0.01 } } ] }
+DEF PAD_YELLOW_2 Pose { translation -5.1 -1.4 0.005 children [ Shape { appearance PBRAppearance { baseColor 1 1 0 roughness 1 metalness 0 } geometry Box { size 1 0.7 0.01 } } ] }
+DEF PAD_ORANGE_L Pose { translation -4.8 3.2 0.005 children [ Shape { appearance PBRAppearance { baseColor 1 0.6 0 roughness 1 metalness 0 } geometry Box { size 0.8 0.4 0.01 } } ] }
+DEF PAD_GREEN_1 Pose { translation 5.1 1 0.005 children [ Shape { appearance PBRAppearance { baseColor 0 0.9 0 roughness 1 metalness 0 } geometry Box { size 1 0.7 0.01 } } ] }
+DEF PAD_GREEN_2 Pose { translation 5.1 -1.4 0.005 children [ Shape { appearance PBRAppearance { baseColor 0 0.9 0 roughness 1 metalness 0 } geometry Box { size 1 0.7 0.01 } } ] }
+DEF PAD_ORANGE_R Pose { translation 4.8 3.2 0.005 children [ Shape { appearance PBRAppearance { baseColor 1 0.6 0 roughness 1 metalness 0 } geometry Box { size 0.8 0.4 0.01 } } ] }
+WoodenBox { translation -3.4 2.8 0.4 name "shelf_c1_r1" size 0.4 0.6 0.8 }
+WoodenBox { translation -3.4 1.6 0.4 name "shelf_c1_r2" size 0.4 0.6 0.8 }
+WoodenBox { translation -3.4 0.3 0.4 name "shelf_c1_r3" size 0.4 0.6 0.8 }
+WoodenBox { translation -3.4 -1.2 0.4 name "shelf_c1_r4" size 0.4 0.6 0.8 }
+WoodenBox { translation -3.4 -3.2 0.4 name "shelf_c1_r5" size 0.4 0.6 0.8 }
+WoodenBox { translation -1.4 2.8 0.4 name "shelf_c2_r1" size 0.4 0.6 0.8 }
+WoodenBox { translation -1.4 1.6 0.4 name "shelf_c2_r2" size 0.4 0.6 0.8 }
+WoodenBox { translation -1.4 0.3 0.4 name "shelf_c2_r3" size 0.4 0.6 0.8 }
+WoodenBox { translation -1.4 -1.2 0.4 name "shelf_c2_r4" size 0.4 0.6 0.8 }
+WoodenBox { translation -1.4 -3.2 0.4 name "shelf_c2_r5" size 0.4 0.6 0.8 }
+WoodenBox { translation 1.4 2.8 0.4 name "shelf_c3_r1" size 0.4 0.6 0.8 }
+WoodenBox { translation 1.4 1.6 0.4 name "shelf_c3_r2" size 0.4 0.6 0.8 }
+WoodenBox { translation 1.4 0.3 0.4 name "shelf_c3_r3" size 0.4 0.6 0.8 }
+WoodenBox { translation 1.4 -1.2 0.4 name "shelf_c3_r4" size 0.4 0.6 0.8 }
+WoodenBox { translation 1.4 -3.2 0.4 name "shelf_c3_r5" size 0.4 0.6 0.8 }
+WoodenBox { translation 3.4 2.8 0.4 name "shelf_c4_r1" size 0.4 0.6 0.8 }
+WoodenBox { translation 3.4 1.6 0.4 name "shelf_c4_r2" size 0.4 0.6 0.8 }
+WoodenBox { translation 3.4 0.3 0.4 name "shelf_c4_r3" size 0.4 0.6 0.8 }
+WoodenBox { translation 3.4 -1.2 0.4 name "shelf_c4_r4" size 0.4 0.6 0.8 }
+WoodenBox { translation 3.4 -3.2 0.4 name "shelf_c4_r5" size 0.4 0.6 0.8 }
+DEF PILLAR_1 Solid { translation -2.6 3.5 0.6 children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.1 roughness 0.6 metalness 0 } geometry Cylinder { height 1.2 radius 0.06 } } ] name "pillar_1" boundingObject Cylinder { height 1.2 radius 0.06 } }
+DEF GOAL_0 Pose { translation 4.400 -3.200 0.012 children [ Shape { appearance PBRAppearance { baseColor 0.9 0.1 0.1 roughness 1 metalness 0 transparency 0.35 } geometry Cylinder { height 0.01 radius 0.22 } } ] }
+DEF GOAL_1 Pose { translation -4.400 -3.200 0.012 children [ Shape { appearance PBRAppearance { baseColor 0.1 0.45 0.95 roughness 1 metalness 0 transparency 0.35 } geometry Cylinder { height 0.01 radius 0.22 } } ] }
+DEF GOAL_2 Pose { translation 4.600 -1.400 0.012 children [ Shape { appearance PBRAppearance { baseColor 0.95 0.75 0.05 roughness 1 metalness 0 transparency 0.35 } geometry Cylinder { height 0.01 radius 0.22 } } ] }
+DEF GOAL_3 Pose { translation -4.400 3.200 0.012 children [ Shape { appearance PBRAppearance { baseColor 0.55 0.2 0.85 roughness 1 metalness 0 transparency 0.35 } geometry Cylinder { height 0.01 radius 0.22 } } ] }
+DEF AGV_0 Pioneer3dx {
+  translation -4.304 -3.086 0.0975
+  rotation 0 0 1 -0.0131
+  name "agv_0"
+  controller "<none>"
+  extensionSlot [
+    Receiver { channel 1 }
+    Pose { translation 0 0 0.25 children [ Shape { appearance PBRAppearance { baseColor 0.9 0.1 0.1 roughness 1 metalness 0 } geometry Cylinder { height 0.02 radius 0.09 } } ] }
+  ]
+}
+DEF AGV_1 Pioneer3dx {
+  translation 5.317 -1.352 0.0975
+  rotation 0 0 1 -2.9537
+  name "agv_1"
+  controller "<none>"
+  extensionSlot [
+    Receiver { channel 1 }
+    Pose { translation 0 0 0.25 children [ Shape { appearance PBRAppearance { baseColor 0.1 0.45 0.95 roughness 1 metalness 0 } geometry Cylinder { height 0.02 radius 0.09 } } ] }
+  ]
+}
+DEF AGV_2 Pioneer3dx {
+  translation -4.413 3.084 0.0975
+  rotation 0 0 1 -0.4617
+  name "agv_2"
+  controller "<none>"
+  extensionSlot [
+    Receiver { channel 1 }
+    Pose { translation 0 0 0.25 children [ Shape { appearance PBRAppearance { baseColor 0.95 0.75 0.05 roughness 1 metalness 0 } geometry Cylinder { height 0.02 radius 0.09 } } ] }
+  ]
+}
+DEF AGV_3 Pioneer3dx {
+  translation 4.550 -1.429 0.0975
+  rotation 0 0 1 2.6643
+  name "agv_3"
+  controller "<none>"
+  extensionSlot [
+    Receiver { channel 1 }
+    Pose { translation 0 0 0.25 children [ Shape { appearance PBRAppearance { baseColor 0.55 0.2 0.85 roughness 1 metalness 0 } geometry Cylinder { height 0.02 radius 0.09 } } ] }
+  ]
+}
+Robot {
+  translation 0 0 -1
+  name "gnn_supervisor"
+  controller "gnn_supervisor"
+  controllerArgs [ "--policy" "esperto" "--seed" "1000" "--episodes" "2" ]
+  supervisor TRUE
+  children [
+    Emitter { channel 1 }
+  ]
+}

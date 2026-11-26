@@ -56,10 +56,3 @@ modelli della tesi non sono disponibili: i nuovi modelli danno risultati diversi
 | `results/webots_log.csv` | risultati Webots della tesi |
 | `results/versione_6_12_18/` | prova con 6, 12, 18 robot, non usata nella tesi |
 
-## Attribuzione
-
-Le reti, il simulatore 2D di base e gli script di generazione dei dati e di addestramento
-derivano da [multi-robot-gnn-cooperative-navigation](https://github.com/XuelinHu/multi-robot-gnn-cooperative-navigation)
-di Xuelin Hu (licenza Apache 2.0, vedi `LICENSE`). Il magazzino, l'esperto, gli strati di
-sicurezza, il controllore, le metriche, l'integrazione con Webots e gli script di validazione
-sono stati sviluppati per questa tesi.

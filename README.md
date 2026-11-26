@@ -26,7 +26,7 @@ bash esegui_figure_2d.sh     # grafici delle tabelle e 6 GIF
 ```
 
 Usano i modelli della tesi (`results/checkpoints_warehouse/`). Le colonne Webots della
-Tabella 4.6 si ottengono con Webots R2025a (vedi `LEGGIMI_COMANDI.md` e `webots/LEGGIMI_WEBOTS.md`).
+Tabella 4.6 si ottengono con Webots R2025a
 
 Un'animazione singola:
 
